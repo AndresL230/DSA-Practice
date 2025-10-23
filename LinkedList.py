@@ -14,7 +14,4 @@ class LinkedList:
 
 
     def append(self, node):
-        tail = self.head.next
-        self.head.next = node
-        node.next = tail
-        node.prev = self.head
+        
