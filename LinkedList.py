@@ -6,4 +6,15 @@ class Node:
 
 
 class LinkedList:
-    
+    def __init__(self, head):
+        self.head = Node(-1)
+        self.tail = Node(-1)
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+
+    def append(self, node):
+        tail = self.head.next
+        self.head.next = node
+        node.next = tail
+        node.prev = self.head
