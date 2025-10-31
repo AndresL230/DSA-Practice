@@ -15,5 +15,6 @@ def insertionSort(lst) -> list:
 
 rand = [3,6,1,-5,3,7]
 
-print(rand)
-print(insertionSort(rand))
+print('Unsorted:', rand)
+
+print('\nSorted:', insertionSort(rand))
